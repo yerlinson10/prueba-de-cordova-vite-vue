@@ -1,8 +1,8 @@
 <template>
     <div class="sidebar">
         <h2>Bienvenido</h2>
-        <h3>Nombre: {{ nombre }} </h3>
-        <h3>Email: {{ email }} </h3>
+        <h3>Nombre: {{ registrarStore.nombre }} </h3>
+        <h3>Email: {{ registrarStore.email }} </h3>
         <ul>
             <li>
                 <router-link to="/counter">Contador</router-link>
@@ -19,20 +19,20 @@
 
 <script setup>
     import { useRegistrarStore } from '@modules/Registro/stores/registrarStore';
-    import { ref, watch } from 'vue';
+    // import { ref, watch } from 'vue';
     const registrarStore = useRegistrarStore();
     console.log(registrarStore.nombre);
     
-    const nombre = ref(registrarStore.nombre.value);
-    const email = ref(registrarStore.email.value);
+    // const nombre = ref(registrarStore.nombre.value);
+    // const email = ref(registrarStore.email.value);
 
-    watch(() => registrarStore.nombre,(newValue) => {
-        nombre.value = newValue;
-    });
+    // watch(() => registrarStore.nombre,(newValue) => {
+    //     nombre.value = newValue;
+    // });
 
-    watch(() => registrarStore.email,(newValue) => {
-        email.value = newValue;
-    });
+    // watch(() => registrarStore.email,(newValue) => {
+    //     email.value = newValue;
+    // });
 
 
     // watch(() => [registrarStore.nombre, registrarStore.email],(newValue) => {

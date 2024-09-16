@@ -1,7 +1,8 @@
 <template>
+
     <div class="cantainer">
         <sidebar></sidebar>
-
+        <Header></Header>
         <div class="content">
             <router-view></router-view>
         </div>
@@ -11,6 +12,7 @@
 
 <script setup>
 import sidebar from '@components/sidebar.vue';
+import Header from '../components/Header.vue';
 
 </script>
 

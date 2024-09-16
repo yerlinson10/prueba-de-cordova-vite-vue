@@ -1,0 +1,30 @@
+.red[data-v-9eb5888a] {
+    color: red
+}
+
+.green[data-v-9eb5888a] {
+    color: #00b126
+}
+
+.btn[data-v-9eb5888a] {
+    padding: .5rem 1.2rem;
+    border-radius: 5px;
+    border: 0px solid rgb(255, 255, 255);
+    cursor: pointer
+}
+
+.btn-add[data-v-9eb5888a] {
+    background-color: #6aff83
+}
+
+.btn-less[data-v-9eb5888a] {
+    background-color: #f84848
+}
+
+.btn-add[data-v-9eb5888a]:hover {
+    background-color: #6ee281
+}
+
+.btn-less[data-v-9eb5888a]:hover {
+    background-color: #db3e3e
+}
